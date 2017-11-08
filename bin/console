@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+# frozen_string_literal: true
+
+require "pathname"
+ENV["BUNDLE_GEMFILE"] ||= File.expand_path("../../Gemfile", Pathname.new(__FILE__).realpath)
+
+require "rubygems"
+require "bundler/setup"
+
+require "ad"
+
+AD.configure do |c|
+  (AD::CONFIG_ATTRS - [:instrumentation_service]).each do |attr|
+    c.send("#{attr}=", ENV.fetch("AD_#{attr.to_s.upcase}"))
+  end
+end
+
+require "pry"
+Pry.start

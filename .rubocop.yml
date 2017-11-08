@@ -1,0 +1,44 @@
+AllCops:
+  TargetRubyVersion: 2.4
+  DisplayCopNames: true
+  Exclude:
+    - "ad.gemspec"
+StringLiterals:
+  Enabled: true
+  EnforcedStyle: double_quotes
+Documentation:
+  Enabled: false
+LineLength:
+  Enabled: false
+Metrics/MethodLength:
+  Enabled: false
+Metrics/AbcSize:
+  Max: 25
+Style/HashSyntax:
+  Enabled: false
+Layout/SpaceInsideBrackets:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Layout/LeadingCommentSpace:
+  Enabled: false
+Layout/SpaceInsideHashLiteralBraces:
+  Enabled: false
+Style/ClassAndModuleChildren:
+  Enabled: false
+Layout/AlignHash:
+  Enabled: false
+Layout/ExtraSpacing:
+  Enabled: false
+Layout/AlignParameters:
+  Enabled: false
+Style/EachWithObject:
+  Enabled: false
+Style/NumericLiterals:
+  Enabled: false
+Layout/SpaceBeforeBlockBraces:
+  Enabled: false
+Bundler/OrderedGems:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false

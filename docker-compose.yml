@@ -1,0 +1,28 @@
+version: '2'
+services:
+  ldap:
+    build:
+      context: test/ldap-server
+    environment:
+      - TZ=Europe/Riga
+    ports:
+      - 3897:3897
+  app:
+    build:
+      context: .
+    environment:
+      - TZ=Europe/Riga
+      - AD_HOST=ldap
+      - AD_PORT=3897
+      - AD_SERVICE_USER_DN=uid=aa729,ou=people,dc=example,dc=org
+      - AD_SERVICE_USER_PASSWORD=smada
+      - AD_BASE_DN=dc=example,dc=org
+      - AD_UNIQUE_ID_ATTR=uid
+    volumes:
+      - .:/app
+      - gems:/gems
+    depends_on:
+      - ldap
+volumes:
+  gems:
+    driver: local
