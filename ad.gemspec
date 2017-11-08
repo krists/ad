@@ -9,7 +9,8 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Krists Ozols"]
   spec.email         = ["krists.ozols@gmail.com"]
   spec.summary       = "A wrapper around Ruby's net-ldap library to ease authentication and record finding"
-
+  spec.homepage      = "https://github.com/krists/ad"
+  
   spec.license = "MIT"
 
   spec.files         = Dir["lib/**/*.rb"]
