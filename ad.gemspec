@@ -10,7 +10,7 @@ Gem::Specification.new do |spec|
   spec.email         = ["krists.ozols@gmail.com"]
   spec.summary       = "A wrapper around Ruby's net-ldap library to ease authentication and record finding"
   spec.homepage      = "https://github.com/krists/ad"
-  
+
   spec.license = "MIT"
 
   spec.files         = Dir["lib/**/*.rb"]
@@ -18,12 +18,12 @@ Gem::Specification.new do |spec|
   spec.executables   = []
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "net-ldap", "~> 0.15.0"
+  spec.add_dependency "net-ldap", "~> 0.16.1"
   spec.add_dependency "activesupport"
 
   spec.add_development_dependency "bundler", "~> 1.15"
-  spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "rake", "~> 12.3"
   spec.add_development_dependency "minitest", "~> 5.0"
-  spec.add_development_dependency "rubocop", "~> 0.51.0"
+  spec.add_development_dependency "rubocop", "~> 0.52.1"
   spec.add_development_dependency "pry", "~> 0.11.2"
 end
