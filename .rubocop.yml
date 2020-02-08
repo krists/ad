@@ -16,8 +16,6 @@ Metrics/AbcSize:
   Max: 25
 Style/HashSyntax:
   Enabled: false
-Layout/SpaceInsideBrackets:
-  Enabled: false
 Style/FrozenStringLiteralComment:
   Enabled: false
 Layout/LeadingCommentSpace:
@@ -26,11 +24,11 @@ Layout/SpaceInsideHashLiteralBraces:
   Enabled: false
 Style/ClassAndModuleChildren:
   Enabled: false
-Layout/AlignHash:
+Layout/HashAlignment:
   Enabled: false
 Layout/ExtraSpacing:
   Enabled: false
-Layout/AlignParameters:
+Layout/ParameterAlignment:
   Enabled: false
 Style/EachWithObject:
   Enabled: false

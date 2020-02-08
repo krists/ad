@@ -1,4 +1,4 @@
-FROM ruby:2.4.2
+FROM ruby:2.7.0
 
 ENV APP_DIR=/app
 
@@ -8,7 +8,7 @@ RUN mkdir ${APP_DIR}
 
 WORKDIR ${APP_DIR}
 
-RUN gem install bundler --version=1.15.4
+RUN gem install bundler --version=2.1.4
 
 ADD . ${APP_DIR}
 
