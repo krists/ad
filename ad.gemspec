@@ -17,7 +17,7 @@ Gem::Specification.new do |spec|
   spec.executables   = []
   spec.require_paths = ["lib"]
 
-  spec.add_dependency "net-ldap", "~> 0.16.1"
+  spec.add_dependency "net-ldap", "~> 0.17.0"
   spec.add_dependency "activesupport"
 
   spec.add_development_dependency "bundler", "~> 2.0"
